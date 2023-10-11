@@ -22,10 +22,17 @@ def init():
     raise Exception("Не реализовано")
 
 def getRandomWord(lib):
-    raise Exception("Не реализовано")
+    return lib[random.randint(0, len(lib)-1)]
 
 def getUserInput(test, test_input=''):
-    raise Exception("Не реализовано")
+    if (test):
+        user_input = test_input
+    else:
+        user_input = str(input())
+    if len(user_input) == 1:
+        return (user_input, True)
+    else:
+        return (user_input, False)
 
 def startGame(test):
     raise Exception("Не реализовано")
