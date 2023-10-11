@@ -11,7 +11,7 @@ def handleWordSubmit(answer, to_be_guessed, guessed_letters):
     return guessed_letters
 
 def charPos(str, char):
-    raise Exception("Не реализовано")
+    return [i for i, c in enumerate(str) if c == char]
 
 def handleKeySubmit(key, to_be_guessed, to_show, guessed_letters):
     raise Exception("Не реализовано")
@@ -19,7 +19,8 @@ def handleKeySubmit(key, to_be_guessed, to_show, guessed_letters):
 lib = None
 
 def init():
-    raise Exception("Не реализовано")
+    jsonFile = open('words', encoding='utf-8')
+    return json.load(jsonFile)
 
 def getRandomWord(lib):
     return lib[random.randint(0, len(lib)-1)]
