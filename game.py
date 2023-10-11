@@ -9,3 +9,26 @@ def handleWordSubmit(answer, to_be_guessed, guessed_letters):
     if answer == to_be_guessed:
         guessed_letters = len(to_be_guessed)
     return guessed_letters
+
+def charPos(str, char):
+    raise Exception("Не реализовано")
+
+def handleKeySubmit(key, to_be_guessed, to_show, guessed_letters):
+    raise Exception("Не реализовано")
+
+lib = None
+
+def init():
+    raise Exception("Не реализовано")
+
+def getRandomWord(lib):
+    raise Exception("Не реализовано")
+
+def getUserInput(test, test_input=''):
+    raise Exception("Не реализовано")
+
+def startGame(test):
+    raise Exception("Не реализовано")
+
+if __name__ == '__main__':
+    startGame(False)
